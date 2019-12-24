@@ -3,7 +3,7 @@ import MainLayout from '../components/MainLayout';
 
 const ListItem = (props) => (
   <li>
-    <Link href={`/post?title=${props.title}`}>
+    <Link as={`/p/${props.id}`} href={`/post?title=${props.title}`}>
       <a>{props.title}</a>
     </Link>
   </li>
@@ -12,8 +12,8 @@ const ListItem = (props) => (
 const Index = () => (
   <MainLayout>
     <ul>
-      <ListItem title='hello ninghao.net' />
-      <ListItem title='learn next.js from ninghao' />
+      <ListItem id="hello" title='hello' />
+      <ListItem id="learn" title='learn next.js' />
     </ul>
   </MainLayout>
 )
