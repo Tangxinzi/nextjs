@@ -1,10 +1,9 @@
 import Link from 'next/link';
+import Header from '../components/Header';
 
 const Index = () => (
   <div>
-    <Link href='/about'>
-      <a>关于</a>
-    </Link>
+    <Header />
     <p>hello ~</p>
   </div>
 )
