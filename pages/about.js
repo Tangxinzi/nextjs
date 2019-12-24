@@ -1,10 +1,9 @@
-import Header from '../components/Header';
+import MainLayout from '../components/MainLayout';
 
 const About = () => (
-  <div>
-    <Header />
+  <MainLayout>
     <p>about</p>
-  </div>
+  </MainLayout>
 )
 
 export default About
